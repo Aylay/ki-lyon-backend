@@ -29,15 +29,15 @@
     "civilite": {
       "type": "enumeration",
       "enum": [
-        "femme",
-        "homme"
+        "madame",
+        "monsieur"
       ]
     },
     "interet": {
       "type": "enumeration",
       "enum": [
         "habiter",
-        "invester"
+        "investir"
       ]
     },
     "nom": {
@@ -67,10 +67,13 @@
     "utmSource": {
       "type": "string"
     },
-    "utmMedia": {
+    "utmMedium": {
       "type": "string"
     },
     "utmCampagne": {
+      "type": "string"
+    },
+    "dateSoumission": {
       "type": "string"
     }
   }
