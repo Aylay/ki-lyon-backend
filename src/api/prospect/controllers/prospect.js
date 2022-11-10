@@ -11,7 +11,7 @@ module.exports = createCoreController('api::prospect.prospect', ({ strapi }) => 
     const response = await super.create(ctx);
 
     // const mailList = ['digital@pitchpromotion.fr', 'pitchpromo@serenis.fr']
-    const mailList = ['luk.attali@gmail.com', 'luk.tattali@gmail.com'];
+    const mailList = ['luk.attali@gmail.com', 'anouk.dib@extreme.fr'];
 
     let textMail = 'Bonjour'
     textMail += '<br /><br />'
