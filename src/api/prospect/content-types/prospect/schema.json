@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prospects",
+  "info": {
+    "singularName": "prospect",
+    "pluralName": "prospects",
+    "displayName": "prospect",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "call",
+        "visio",
+        "rdv"
+      ]
+    },
+    "brochure": {
+      "type": "boolean"
+    },
+    "info": {
+      "type": "boolean"
+    },
+    "civilite": {
+      "type": "enumeration",
+      "enum": [
+        "femme",
+        "homme"
+      ]
+    },
+    "interet": {
+      "type": "enumeration",
+      "enum": [
+        "habiter",
+        "invester"
+      ]
+    },
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "codePostal": {
+      "type": "string"
+    },
+    "ville": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "heure": {
+      "type": "string"
+    },
+    "utmSource": {
+      "type": "string"
+    },
+    "utmMedia": {
+      "type": "string"
+    },
+    "utmCampagne": {
+      "type": "string"
+    }
+  }
+}
