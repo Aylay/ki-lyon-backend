@@ -10,8 +10,9 @@ module.exports = createCoreController('api::prospect.prospect', ({ strapi }) => 
   async create(ctx) {
     const response = await super.create(ctx);
 
-    const mailList = ['digital@pitchpromotion.fr', 'pitchpromo@serenis.fr']
+    // const mailList = ['digital@pitchpromotion.fr', 'pitchpromo@serenis.fr', 'anniechung.web@gmail.com', 'anouk.dib@extreme.fr']
     // const mailList = ['luk.attali@gmail.com', 'anouk.dib@extreme.fr'];
+    const mailList = ['luk.attali@gmail.com'];
 
     let textMail = 'Bonjour'
     textMail += '<br /><br />'
@@ -65,7 +66,8 @@ module.exports = createCoreController('api::prospect.prospect', ({ strapi }) => 
     textMail += 'Destination du bien : ' + response.data.attributes.interet + '<br />'
     textMail += 'Date : ' + response.data.attributes.dateSoumission + '<br /><br />'
 
-    textMail += 'J’accepte de recevoir des alertes et des contenus personnalisés de la part de Pitch Immo m’informant de ses produits et services: OUI'
+    const nlChecked = response.data.attributes.nl ? "OUI" : "NON"
+    textMail += 'J’accepte de recevoir des alertes et des contenus personnalisés de la part de Pitch Immo m’informant de ses produits et services: ' + nlChecked
 
     await strapi
     .plugin('email')

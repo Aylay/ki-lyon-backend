@@ -75,6 +75,9 @@
     },
     "dateSoumission": {
       "type": "string"
+    },
+    "nl": {
+      "type": "boolean"
     }
   }
 }
