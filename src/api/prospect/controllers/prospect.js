@@ -74,7 +74,7 @@ module.exports = createCoreController('api::prospect.prospect', ({ strapi }) => 
     .service('email')
     .send({
       to: mailList,
-      from: 'anouk.dib@extreme.fr',
+      from: 'minisite-kilyon@ki-lyon.fr',
       subject: '(69) Lyon – KI - Part Dieu - pitchimmo.fr',
       html: textMail,
     });
